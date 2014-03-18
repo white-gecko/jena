@@ -133,8 +133,6 @@ public class JSONInput extends SPARQLResult
         }
         
         rows = new ArrayList<Binding>(1000) ;
-        
-        checkContains(obj, kHead, kResults) ;
 
         if ( ! obj.hasKey(kHead) )    throw new ResultSetException("No 'head' for results") ;
         if ( ! obj.hasKey(kResults) ) throw new ResultSetException("No 'results' for results") ;
